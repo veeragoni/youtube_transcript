@@ -48,7 +48,7 @@ jobs:
       - name: Build Application
         run: make
       - name: Rename binary for release
-        run: mv youtube_transcript youtube_transcript-x86_64
+        run: mv youtube_transcript youtube_transcript-opensuse-x86_64
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
