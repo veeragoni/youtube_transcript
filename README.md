@@ -25,6 +25,12 @@ sudo apt-get update
 sudo apt-get install libcurl4-openssl-dev
 ```
 
+On openSUSE:
+
+```bash
+sudo zypper install libcurl-devel
+```
+
 On macOS (using Homebrew):
 
 ```bash
@@ -35,8 +41,8 @@ brew install curl
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
-    cd <repository-directory>
+    git clone https://github.com/Zibri/youtube_transcript
+    cd youtube_transcript
     ```
 
 2.  **Compile the code:**
@@ -73,7 +79,7 @@ Run the program from your terminal with the YouTube video ID as the first argume
 
 2.  **Get a transcript in French:**
     ```bash
-    ./youtube_transcript <video_id> fr
+    ./youtube_transcript dQw4w9WgXcQ fr
     ```
 
 3.  **Save the transcript to a file:**
