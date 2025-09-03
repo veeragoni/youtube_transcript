@@ -215,9 +215,11 @@ int main(int argc, char *argv[]) {
                             cJSON *elementsAttributedString = cJSON_GetObjectItem(snippet, "elementsAttributedString");
                             cJSON *content = cJSON_GetObjectItem(elementsAttributedString, "content");
                             if (cJSON_IsString(content) && (content->valuestring != NULL)) {
-                                printf("%s\n", content->valuestring);
+                                printf("%s", content->valuestring);
+                                printf(" ");
                             }
                         }
+                        printf("\n");
                     } else {
                          fprintf(stderr, "Could not find transcript in API response. The video may not have a transcript for the selected language.\n");
                     }
